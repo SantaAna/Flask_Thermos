@@ -19,8 +19,8 @@ def index():
     return render_template('index.html', title="This is my title", text="This is my text.", user=User("Pixie", "Goodog"))
 
 @app.route('/add')
-    def add():
-        return render_template('add.html')
+def add():
+    return render_template('add.html')
 
 if __name__== '__main__':
     app.run(host='0.0.0.0')
